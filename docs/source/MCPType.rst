@@ -16,6 +16,10 @@ For example, maintaining information about routes or cargo.
 
 The MCP entity type is defined and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
+.. image:: _static/image/MCP_entitiy_hierarchy.png
+    :align: center
+    :alt: MCP entity hierarchy
+
 The internal identity management system is built of a hierarchy with organizations on top, that can have different types of entities (except organization) them, where one entity can only belong to one organization.
 
 Organization

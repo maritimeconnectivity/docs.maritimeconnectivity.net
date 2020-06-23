@@ -59,7 +59,7 @@ The Subject distinguished name field will consists of the following items:
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
 |C (Country)             |                             Organization country code                              |
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
-|UID                     |                          Entity MCP MRN                       |Organization MCP MRN|
+|UID                     |                               MCP MRN                                              |
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
 
 An example of the fields for a vessel could look like this::
