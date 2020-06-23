@@ -16,7 +16,7 @@ For example, maintaining information about routes or cargo.
 
 The MCP entity type is defined and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
-.. image:: _static/image/MCP_entitiy_hierarchy.png
+.. image:: _static/image/MCP_entity_hierarchy.png
     :align: center
     :alt: MCP entity hierarchy
 
