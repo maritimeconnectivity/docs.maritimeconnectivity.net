@@ -54,7 +54,7 @@ Information required to be registered in MIR::
   mandatory: mrn, name, email, url, address, country
   optional: mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Vessel
 ^^^^^^^
@@ -71,7 +71,7 @@ Information required to be registered in MIR::
   mandatory: org, mrn, name
   optional: permission, imo-number, mmsi-number, callsign, flagstate, ais-class, port-of-register, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Service
 ^^^^^^^^
@@ -82,7 +82,7 @@ Information required to be registered in MIR::
   mandatory: org, mrn, name, instanceVersion
   optional: permission, vessel, certDomainName, oidcAccessType, oidcClientId, oidcClientSecret, oidcRedirectUri, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Information required to be registered in MSR::
 
@@ -99,7 +99,7 @@ Information required to be registered in MIR::
   mandatory: org, mrn, firstName, lastName, email
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Device
 ^^^^^^^
@@ -110,7 +110,7 @@ Information required to be registered in MIR::
   mandatory: org, mrn, name
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 MMS
 ^^^
@@ -121,7 +121,7 @@ Information required to be registered in MIR::
   mandatory: org, mrn, name, url
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 MIR
 ^^^
