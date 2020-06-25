@@ -49,7 +49,7 @@ Examples of valid organization MCP MRN are:
 
 MRN has been approved by `IANA <https://www.iana.org/>`__ as an official URN namespace. For more information on the MRN specification you can read more at https://www.iana.org/assignments/urn-formal/mrn
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: mrn, name, email, url, address, country
   optional: mrnSubsidiary, homeMMSUrl
@@ -66,7 +66,7 @@ As part of the authentication certificate of a vessel its name, MMSI number, IMO
 
 Vessel can relate multiple services with itself where the relation can be made by Services.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name
   optional: permission, imo-number, mmsi-number, callsign, flagstate, ais-class, port-of-register, mrnSubsidiary, homeMMSUrl
@@ -77,7 +77,7 @@ Service
 ^^^^^^^^
 Service refers to a digital service. For example, a weather service that is available to other services for machine to machine communication. Services need to be registered in such a way that it can successfully authenticate users.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name, instanceVersion
   optional: permission, vessel, certDomainName, oidcAccessType, oidcClientId, oidcClientSecret, oidcRedirectUri, mrnSubsidiary, homeMMSUrl
@@ -94,7 +94,7 @@ User
 ^^^^^
 User mainly refers to human users. Human users differ from other actors in that they typically use a username/password to login which implies a different interaction pattern with the identity registry than say communication between vessels.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, firstName, lastName, email
   optional: permission, mrnSubsidiary, homeMMSUrl
@@ -105,7 +105,7 @@ Device
 ^^^^^^^
 Device can be any number of entities that are not covered by the other entity types. It could for example be a lighthouse, an ECDIS or a server that needs to be able to authenticate itself.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name
   optional: permission, mrnSubsidiary, homeMMSUrl
@@ -116,7 +116,7 @@ MMS
 ^^^
 MMS is a running instance of Maritime Messaging Service (MMS), one of the MCP core components.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name, url
   optional: permission, mrnSubsidiary, homeMMSUrl
