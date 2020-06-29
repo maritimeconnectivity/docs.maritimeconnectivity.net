@@ -16,6 +16,10 @@ For example, maintaining information about routes or cargo.
 
 The MCP entity type is defined and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
+.. image:: _static/image/MCP_entity_hierarchy.png
+    :align: center
+    :alt: MCP entity hierarchy
+
 The internal identity management system is built of a hierarchy with organizations on top, that can have different types of entities (except organization) them, where one entity can only belong to one organization.
 
 Organization
@@ -45,12 +49,12 @@ Examples of valid organization MCP MRN are:
 
 MRN has been approved by `IANA <https://www.iana.org/>`__ as an official URN namespace. For more information on the MRN specification you can read more at https://www.iana.org/assignments/urn-formal/mrn
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: mrn, name, email, url, address, country
   optional: mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Vessel
 ^^^^^^^
@@ -62,23 +66,23 @@ As part of the authentication certificate of a vessel its name, MMSI number, IMO
 
 Vessel can relate multiple services with itself where the relation can be made by Services.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name
   optional: permission, imo-number, mmsi-number, callsign, flagstate, ais-class, port-of-register, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Service
 ^^^^^^^^
 Service refers to a digital service. For example, a weather service that is available to other services for machine to machine communication. Services need to be registered in such a way that it can successfully authenticate users.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name, instanceVersion
   optional: permission, vessel, certDomainName, oidcAccessType, oidcClientId, oidcClientSecret, oidcRedirectUri, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Information required to be registered in MSR::
 
@@ -90,34 +94,34 @@ User
 ^^^^^
 User mainly refers to human users. Human users differ from other actors in that they typically use a username/password to login which implies a different interaction pattern with the identity registry than say communication between vessels.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, firstName, lastName, email
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 Device
 ^^^^^^^
 Device can be any number of entities that are not covered by the other entity types. It could for example be a lighthouse, an ECDIS or a server that needs to be able to authenticate itself.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 MMS
 ^^^
 MMS is a running instance of Maritime Messaging Service (MMS), one of the MCP core components.
 
-Information required to be registered in MIR::
+Information required to be registered in MIR (case-sensitive)::
 
   mandatory: org, mrn, name, url
   optional: permission, mrnSubsidiary, homeMMSUrl
 
-Each of definitions are given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
+Each of definitions is given from the `corresponding data model in the Swagger file <https://api-x509.maritimecloud.net/v2/api-docs>`__.
 
 MIR
 ^^^
