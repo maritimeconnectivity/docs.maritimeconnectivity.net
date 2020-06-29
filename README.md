@@ -1,2 +1,2 @@
 # docs.maritimeconnectivity.net
-MCP online documentation
+MCP online documentation based on Read the docs (https://readthedocs.org/).
