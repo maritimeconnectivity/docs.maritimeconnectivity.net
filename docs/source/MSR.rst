@@ -71,20 +71,18 @@ How to register a service to MSR
 ***********************************
 To register a service, the following steps should be followed:
 
-* Authenticate with MIR (service instance should be registered)
+* Authenticate with MIR
 * Register a Service Specification in MSR
 * Register a Service Design in the SR which refers to the Specification
 * Register a Service Instance
 
 If any of the higher level requirements are already met, for example a new instance for an existing Design is to be registered, then the existing items don’t have to be duplicated but can be referenced.
-Each of the service fragments (Specification, Design and Instance) consist of a human-readable (in DOC format) and a machine readable part (in XML). The Schema for the XML can be downloaded from the Service Registry.
+Each of the service fragments (Specification, Design and Instance) consist of a human-readable (in PDF format) and a machine readable part (in XML). The Schema for the XML can be downloaded from the Service Registry.
 
 How to query a service in MSR
 ***********************************
 To query the MSR for a desired service, the flow is as follows:
 
-* Authenticate with the Identity Registry
-* Get OAuth2 token
 * Access SR API to query Specifications, Designs and Instance information
 
 MSR API access
@@ -154,7 +152,7 @@ For example::
 What MCC governs in MSR
 ^^^^^^^^^^^^^^^^^^^^^^^
 * :ref:`MCP namespace <mcp-mrn>`
-* REST API (https://sr.maritimecloud.net/swagger-ui/index.html)
+* REST API (https://sr.maritimeconnectivity.net/v2/api-docs)
 * MSR reference implementation
 
 MSR reference implementation

@@ -13,14 +13,6 @@ MIR API accepts either a certificate (PKI) or a token (OIDC) for user authentica
 After the authentication and following authorization, the user can register and manage the entities through the MIR API, with a proper right what we defined as a role.
 One important feature on the management is to issue or revoke a X509 client certificate for entities that are already registered in the API database.
 
-Identity Management
-^^^^^^^^^^^^^^^^^^^
-Identity management refers to the process of employing technologies to manage information about the identity of users and control access to company resources. The goal of identity management is to improve productivity and security while lowering costs associated with managing users and their identities, attributes, and credentials.
-
-The goal of MIR is to create a solution that satisfies the most common identification needs for the entire maritime industry on a global scale, as it is shown in the :ref:`MCP namespace <mcp-mrn>`.
-
-This is not a simple task as any solution must support every possible user scenarios from small leisure sailors to multinational companies. The complexity of this task is why the functionality will be delivered over multiple milestones in the coming years. The most important things such as support for authentication will be implemented first. Additional functionality will be added based on user needs in the projects supported by MCP.
-
 .. _mir-authentication:
 
 Authentication in MIR
@@ -118,7 +110,7 @@ What MCC governs in MIR
 * :ref:`MCP types and its hierarchy <mcp-type>`
 * :ref:`PKI certificate profile <mcp-pki-cert-profile>`
 * :ref:`OIDC Token <mcp-token>`
-* REST API (https://test-api.maritimecloud.net/v2/api-docs)
+* REST API (https://api.maritimeconnectivity.net/v2/api-docs)
 * MCP Instance Provider root CA list
 * MIR reference implementation
 

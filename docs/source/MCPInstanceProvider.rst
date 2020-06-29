@@ -25,7 +25,7 @@ List of MCP Instance Providers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 There are currently no fully compliant instances of MCP - since the final specifications for MCP are still in the process of being developed. However, two organisations are currently setting up instances that will be MCP compliant:
 
-* `Navelink Industry Consortium <https://management.maritimecloud.net/#/apply>`__
+* `Navelink Industry Consortium <https://www.navelink.org/>`__
 * `SMART Navigation project <https://www.smartnav.org/eng/html/Index_New/>`__ by the Ministry of Ocean and Fisheries (Korea)
 
 Up to date information can be found in the `MCP official page <https://maritimeconnectivity.net/#mcp_instances>`__.
