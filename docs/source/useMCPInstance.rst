@@ -46,27 +46,15 @@ Using MCP testbed Certificates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In order to use the certificates issued by the MCP Identity Registry it is needed to add MCP Root Certificates to the relevant trustchain. Here you can download the root certificates for MCP instances:
 
-The public demonstrator environment root certificates as PEM (one file, primarily for Apache/Nginx), in JKS (for Java) or a zip with the separate files (for windows).
-The staging environment root certificates as PEM (one file, primarily for Apache/Nginx), in JKS (for Java) or a zip with the separate files (for windows).
-The test environment root certificates as PEM (one file, primarily for Apache/Nginx), in JKS (for Java) or a zip with the separate files (for windows).
+The public demonstrator environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-certs.zip>`__.
+The staging environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-ca-certs.zip>`__.
+The test environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
 
 Adding your external Identity Provider to MCP testbed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 If your organizations wishes to connect to MCP testbed as an Identity Provider, to enable your uses to authenticate in MCP testbed, please contact Oliver Haagh at oliver@dmc.international in order to set it up. Note that currently you need to expose interfaces that supports either OpenID Connect or SAML2.
 
-MCP testbed use cases
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* use of identity management or certificate case
-* use of service consumer case
-* use of service provider case
-
 Using MCP Instance Provider
 ---------------------------
 MCC will provide the criteria and the procedure on vetting of organizations in MCP Instance Provider and the guideline how an MCP Instance Provider handle MCP entities.
 Please refer the policy of the MCP Instance Provider you want to apply (:ref:`List of MCP Instance Providers <mcp-instance-provider-list>`).
-
-MCP Instance Provider use cases
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-* use of identity management or certificate case
-* use of service consumer case
-* use of service provider case

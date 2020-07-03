@@ -3,29 +3,35 @@ Maritime Connectivity Platform (MCP) documentation
 
 This documentation describes Maritime Connectivity Platform from the overall architecture to the technical details of the MCP reference implementation.
 
-This primarily aims to cover the technical parts of MCP. If you are not familiar with MCP we encourage you to read `MCP official webpage <https://maritimeconnectivity.net/>`__ that gives the idea of MCP in more high level.
+Intended audiences are mostly people having technical backgrounds, for example:
+
+* MCP instance provider developers
+* MCP service providers
+* MCP service consumers
+* MCP source code contributors
+
+To build solid understanding of MCP you are expected to read the documents from the list below:
+
+* `MCP official webpage <https://maritimeconnectivity.net/>`__
+* `MCP concept document <https://maritimeconnectivity.net/docs/TheMCPconcept.pdf>`__
+* `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__
+* `IALA's G1128 e-Navigation technical service specification guideline <https://maritimeconnectivity.net/docs/Service_Documentation_Guidelines.pdf>`__
 
 Please refer `our Google Group <https://groups.google.com/forum/#!forum/maritimeconnectivity>`__ for general usage questions and new releases.
 
-.. toctree::
-   :maxdepth: 2
+**Table of content**
 
-   navigation
+.. toctree::
+   :maxdepth: 1
+
    basicConcept
-   MCC
-   history
-   MCPType
-   MRN
    MIR
-   PKI
-   OIDC
    MSR
    MMS
+   MRN
    MCPInstanceProvider
    useMCPInstance
-   setupMIR
-   setupMSR
-   setupMMS
+   setupMCP
    sourcecode
    terminology
    reference
