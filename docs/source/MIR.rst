@@ -141,15 +141,6 @@ A crucial part of any PKI is to support revocation of certificates, so that cert
 
 The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently https://api.maritimecloud.net/x509/api/certificates/crl and https://api.maritimecloud.net/x509/api/certificates/ocsp.
 
-How I can see the attributes of an MCP certificate?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The attributes of an MCP certificate you have can be shown by using the `MCP-PKI java library <https://github.com/MaritimeConnectivityPlatform/MCP-PKI>`__::
-
-  java -jar mcp-pki-0.11.0-SNAPSHOT-jar-with-dependencies.jar --print-certificate <certificate-name>.pem
-
-Alternatively the reference implementation of a web service visualizing MCP certificates is available in the MCC repository as the `Identity Extractor Service <https://github.com/MaritimeConnectivityPlatform/IdentityExtractorService>`__.
-
-
 .. _mcp-oidc:
 
 Open ID Connect (OIDC)
