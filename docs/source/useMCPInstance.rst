@@ -28,7 +28,7 @@ Applying your organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Users of the MCC MCP testbed will go through a very simple validation process.
 
-1. New users apply for access through the management portal of the public demonstrator environment by filling out the `registration form <https://management.maritimecloud.net/#/apply>`__.
+1. New users apply for access through the management portal of the public demonstrator environment by filling out the `registration form <https://management.maritimeconnectivity.net/#/apply>`__.
 2. Their organizations will be assessed though their website (for test and staging: the organizations should be members of the MCC beforehand)
 3. The users will be validated through email correspondence where they are requested to use an email address belonging to the official internet domain
 4. Access to the environments are handled by the MCC secretariat, which may deviate from the above procedure if they deem appropriate

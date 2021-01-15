@@ -10,7 +10,7 @@ Under the API MIR can authenticate an user, based on two methods:
 * :ref:`Open ID Connect (OIDC)<mcp-oidc>`.
 
 MIR API accepts either a certificate (PKI) or a token (OIDC) for user authentication.
-After the authentication and following authorization, the user can register and manage the entities through the `MIR API <https://api.maritimecloud.net/v2/api-docs>`__, with :ref:`a proper right what we defined as a role <mir-authorization>`.
+After the authentication and following authorization, the user can register and manage the entities through the `MIR API <https://api.maritimeconnectivity.net/v2/api-docs>`__, with :ref:`a proper right what we defined as a role <mir-authorization>`.
 One important feature as the identity management is to issue or revoke a X509 client certificate for entities that are already registered in the API database.
 
 .. _mcp-type:
@@ -19,7 +19,7 @@ MCP entity types
 -----------------
 MCP entity types are described in `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__ and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
-The data model of each entity in MIR is given in the `Swagger file of MIR <https://api.maritimecloud.net/v2/api-docs>`__.
+The data model of each entity in MIR is given in the `Swagger file of MIR <https://api.maritimeconnectivity.net/v2/api-docs>`__.
 
 
 .. _mcp-pki:
@@ -139,7 +139,7 @@ A crucial part of any PKI is to support revocation of certificates, so that cert
 1. Call the OCSP interface provided by the Identity Registry for each certificate.
 2. Periodically download a Certificate Revocation File from the Identity Registry and use it check certificates locally.
 
-The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently https://api.maritimecloud.net/x509/api/certificates/crl and https://api.maritimecloud.net/x509/api/certificates/ocsp.
+The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently http://api.maritimeconnectivity.net/x509/api/certificates/crl and http://api.maritimeconnectivity.net/x509/api/certificates/ocsp.
 
 .. _mcp-oidc:
 
@@ -307,7 +307,7 @@ These 2 steps are actually standard in the OpenID Connect Authorization Code Flo
 
 First we obtain the code by issuing this command::
 
-  curl --verbose --location --cookie "" --key PrivateKey.pem --cert Certificate.pem 'https://maritimeid.maritimecloud.net/auth/realms/MaritimeCloud/protocol/openid-connect/auth?client_id=cert2oidc&redirect_uri=http%3A%2F%2Flocalhost%3A99&response_type=code&kc_idp_hint=certificates&scope=openid'
+  curl --verbose --location --cookie "" --key PrivateKey.pem --cert Certificate.pem 'https://maritimeid.maritimeconnectivity.net/auth/realms/MaritimeCloud/protocol/openid-connect/auth?client_id=cert2oidc&redirect_uri=http%3A%2F%2Flocalhost%3A99&response_type=code&kc_idp_hint=certificates&scope=openid'
 
 Let us break down the command:
 
@@ -317,7 +317,7 @@ Let us break down the command:
 
 * The last part is the URL which itself is multiple parts:
 
-   * Address of the authentication endpoint: ``https://maritimeid.maritimecloud.net/auth/realms/MaritimeCloud/protocol/openid-connect/auth``
+   * Address of the authentication endpoint: ``https://maritimeid.maritimeconnectivity.net/auth/realms/MaritimeCloud/protocol/openid-connect/auth``
 
    * Parameters: ``client_id=cert2oidc&redirect_uri=http%3A%2F%2Flocalhost&response_type=code&kc_idp_hint=certificates&scope=openid``. These can be also be broken down:
 
@@ -344,7 +344,7 @@ When the command runs it returns a lot of output, due to being in verbose mode. 
 
 Here we can recognize ``http://localhost:99`` from the ``redirect_uri`` parameter described earlier. We can also see that the ``code`` parameter is in the url, in this case with the value ``uss.Yw6k4rXOJiR6IF4a2Y7tYC1-Eqoo8dHSUwjfuIFDfpI.543a63db-9d22-45f7-85b6-a258059c0825.6826c662-6b68-423a-a248-71bd3e69dab0``. It is this code we need to in the second step of authentication to get the OpenID Connect Tokens. The code is only valid for a very limited time (less than a minute) and can only be used once. We will again use ``curl`` in the second step::
 
-  curl --data "grant_type=authorization_code&client_id=cert2oidc&code=uss.Yw6k4rXOJiR6IF4a2Y7tYC1-Eqoo8dHSUwjfuIFDfpI.543a63db-9d22-45f7-85b6-a258059c0825.6826c662-6b68-423a-a248-71bd3e69dab0&redirect_uri=http%3A%2F%2Flocalhost%3A99" https://maritimeid.maritimecloud.net/auth/realms/MaritimeCloud/protocol/openid-connect/token
+  curl --data "grant_type=authorization_code&client_id=cert2oidc&code=uss.Yw6k4rXOJiR6IF4a2Y7tYC1-Eqoo8dHSUwjfuIFDfpI.543a63db-9d22-45f7-85b6-a258059c0825.6826c662-6b68-423a-a248-71bd3e69dab0&redirect_uri=http%3A%2F%2Flocalhost%3A99" https://maritimeid.maritimeconnectivity.net/auth/realms/MaritimeCloud/protocol/openid-connect/token
 
 Again, let us break down the command. In this case the command consist of 3 parts, ``curl`` — the tool itself, data-parameters and an URL. We will concentrated on the data-parameters. Note that this is a HTTP POST request, which is why the parameters is supplied in a separate argument and not as part of the URL.
 
@@ -371,11 +371,11 @@ When this call runs there will be no redirection, so we do not need to tell curl
 
 The access_token is the token that should be used we communicating with services in MCP context. The token should be embedded in the HTTP header. When using curl it can be done like this::
 
-  curl -H "Authorization: Bearer eyJhbGciOiJ...uXoHudIM1yiDBYj8g" https://api.maritimecloud.net/oidc/api/org/DMA
+  curl -H "Authorization: Bearer eyJhbGciOiJ...uXoHudIM1yiDBYj8g" https://api.maritimeconnectivity.net/oidc/api/org/DMA
 
 The refresh_token is used to re-authenticate to get a new set of tokens when the access_token has expired, in this case 300 seconds after it has been issued, as seen in the expires_in attribute. The new set of tokens can then be obtain with a HTTP POST like this::
 
-  curl --data "grant_type=refresh_token&client_id=cert2oidc&refresh_token=eyJhbGciOiJ...iv7rKSa__IKy983Gg" https://maritimeid.maritimecloud.net/auth/realms/MaritimeCloud/protocol/openid-connect/token
+  curl --data "grant_type=refresh_token&client_id=cert2oidc&refresh_token=eyJhbGciOiJ...iv7rKSa__IKy983Gg" https://maritimeid.maritimeconnectivity.net/auth/realms/MaritimeCloud/protocol/openid-connect/token
 
 
 .. _mir-authorization:
@@ -443,7 +443,7 @@ What MCC governs in MIR
 * :ref:`MCP types and its hierarchy <mcp-type>`
 * :ref:`PKI certificate profile <mcp-pki-cert-profile>`
 * :ref:`OIDC Token <mcp-token>`
-* REST API (https://api.maritimecloud.net/v2/api-docs)
+* REST API (https://api.maritimeconnectivity.net/v2/api-docs)
 * MCP Instance Provider root CA list
 * MIR reference implementation
 

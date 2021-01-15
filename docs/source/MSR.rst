@@ -89,7 +89,7 @@ MSR API access
 ***********************************
 MSR is accessed by means of a REST API via HTTP protocol.
 The MSR API is standardized by MCC and uses Swagger (https://swagger.io/), the OpenAPI specification, to describe the details.
-An online API overview plus sample generation page can be found at MSR of MCC Testbed (https://sr.maritimecloud.net/swagger-ui/index.html).
+An online API overview plus sample generation page can be found at MSR of MCC Testbed (https://sr.maritimeconnectivity.net/swagger-ui/index.html).
 
 Geographic Functionality
 ^^^^^^^^^^^^^^^^^^^^^^^^
