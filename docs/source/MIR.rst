@@ -30,13 +30,11 @@ A Public Key Infrastructure (PKI) is a set of hardware, software, people, polici
 
 The key piece in a PKI architecture is a PKI CA (Certificate Authority) which is an entity that issues digital authentication certificates. A digital certificate that certifies the ownership of a public key by the named subject of the certificate. An obvious example would be creating a certificate for a vessel, which can serve to certify that a given document was indeed signed by someone in possession of the certificate issued to that vessel.
 
-One of the most important aspects of designing a PKI based architecture is the certificate hierarchy planning because the design will affect how certificates are validated and used by PKI-enabled actors. Normally a PKI based architecture is arranged in a tree like hierarchy with a single root entity in the top and with numerous leaves called sub CAs. Each sub CA can have their own sub CA thereby forming a tree with a single entity at the top. Each leave in the tree is responsible for creating certificates, for example, ships or organizations. The reason for doing this is to be able to delegate the responsibility to different parties. For example, in the case of MCP one could envision that at some point in the future every flag state would be their own sub CA. Having the sole responsibility of issuing certificates for vessels registered under their own flag.
+One of the most important aspects of designing a PKI based architecture is the certificate hierarchy planning because the design will affect how certificates are validated and used by PKI-enabled actors. Normally a PKI based architecture is arranged in a tree like hierarchy with a single root CA in the top and with numerous leaves called intermediate CAs or sub CAs. Each sub CA can have their own sub CA thereby forming a tree with a single entity at the top. Each leave in the tree is responsible for creating certificates, for example, ships or organizations. The reason for doing this is to be able to delegate the responsibility to different parties. For example, in the case of MCP one could envision that at some point in the future every flag state would be their own sub CA. Having the sole responsibility of issuing certificates for vessels registered under their own flag.
 
 .. image:: _static/image/pki_hierarchy.png
     :align: center
     :alt: PKI hierarchy
-
-In the current version of MCP we are working with four sub CAs that have the responsibility for issuing all certificates. The four sub CAs are IALA, BIMCO, SMART Navigation Project and the MCP Identity Registry itself.
 
 The most important functionality of a CA is issuing digital certificates. A digital certificate certifies the ownership of a public key by the named subject of the certificate. This allows others (relying parties) to rely upon signatures or on assertions made about the private key that corresponds to the certified public key. In this model of trust relationships, a CA is a trusted third party—trusted both by the subject (owner) of the certificate and by the party relying upon the certificate. In the case of MCP these certificates are typically used to make secure connections between maritime actors over the Internet. A certificate is required in order to avoid the case that a malicious party which happens to be on the path to the target server pretends to be the actual target. Such a scenario is commonly referred to as a man-in-the-middle attack. The client uses the CA certificate to verify the CA signature on the server certificate, as part of the checks before establishing a secure connection. Likewise, the server has the option of inspecting the clients certificate before allowing it to connect.
 
@@ -189,6 +187,7 @@ MCP expects the following attributes in the OpenID Connect JWT Access Token:
 
 These attributes will be directly mapped from attributes provided by the organizations Identity Provider, so the Identity Provider must also provide these attributes, except for the "org"-attribute.
 
+A thing to note here is that all the above attributes will not apply to all entity types, for example device or vessel entity will not have an email address.
 
 Authentication with OIDC
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -256,7 +255,6 @@ As default MCP Identity Broker expect the following attributes to be provided by
 | org-address | Address of the organization. It must be without linebreaks, ending with comma and the country of the address. |
 +-------------+---------------------------------------------------------------------------------------------------------------+
 
-Note that the MRN must be on the form "urn:mrn:mcl:user:dma@iala:thc" and "urn:mrn:mcl:org:dma@iala" for user and organization respectively. In this case the organization is "dma" whos identity is guaranteed by "iala".
 
 Setting up an SAML2 Identity Provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
