@@ -20,7 +20,7 @@ To build solid understanding of MCP you are expected to read the documents from 
 * `Identity Management and Security: Authentication and Authorisation for Web Services <https://maritimeconnectivity.net/docs/mcp-idsec-4-AUTH.pdf>`__
 * `IALA's G1128 e-Navigation technical service specification guideline <https://maritimeconnectivity.net/docs/Service_Documentation_Guidelines.pdf>`__
 
-Please refer `our Google Group <https://groups.google.com/forum/#!forum/maritimeconnectivity>`__ for general usage questions and new releases.
+Please refer `our Discourse forum <https://mcp.discourse.group/>`__ for general usage questions and new releases.
 
 **Table of content**
 

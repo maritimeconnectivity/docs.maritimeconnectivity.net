@@ -5,13 +5,13 @@ Setting up MCP
 
 Setting up MIR
 --------------
-Complete documentation on setup can be found at the `MIR setup guide <https://github.com/MaritimeConnectivityPlatform/IdentityRegistry/blob/master/setup/guide/MIR_setup.pdf>`__.
+Complete documentation on setup can be found at the `MIR setup guide <https://github.com/maritimeconnectivity/IdentityRegistry/blob/master/setup/guide/MIR_setup.pdf>`__.
 
 .. _setup-msr:
 
 Setting up MSR
 --------------
-Setup guideline can be found at the `MSR repository <https://github.com/MaritimeConnectivityPlatform/mc-serviceregistry>`__.
+Setup guideline can be found at the `MSR repository <https://github.com/maritimeconnectivity/mc-serviceregistry>`__.
 
 .. _setup-mms:
 

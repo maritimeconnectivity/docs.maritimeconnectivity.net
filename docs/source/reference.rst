@@ -8,7 +8,10 @@ Related documents
 * `G1128 technical service specification template <https://maritimeconnectivity.net/docs/Service_Specification_Template.docx>`__
 * `G1128 technical service design description template <https://maritimeconnectivity.net/docs/Service_Design_Description_Template.docx>`__
 * `G1128 technical service instance description template <https://maritimeconnectivity.net/docs/Service_Instance_Description_Template.docx>`__
-* `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__
+* `Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-overview.pdf>`__
+* `Identity Management and Security: Identity Management (the MCP usage of Maritime Resource Names, MRN) <https://maritimeconnectivity.net/docs/mcp-idsec-2-ID.pdf>`__
+* `Identity Management and Security: Public Key Infrastructure (PKI) <https://maritimeconnectivity.net/docs/mcp-idsec-3-PKI.pdf>`__
+* `Identity Management and Security: Authentication and Authorisation for Web Services <https://maritimeconnectivity.net/docs/mcp-idsec-4-AUTH.pdf>`__
 * `A high-level description of the Maritime Messaging Service (MMS) <https://maritimeconnectivity.net/docs/MMS_Specification_0.8.3.pdf>`__
 
 Related projects

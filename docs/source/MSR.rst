@@ -159,4 +159,4 @@ MSR reference implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 MCC governs the reference implementation on MSR as follows:
 
-- MSR: https://github.com/MaritimeConnectivityPlatform/mc-serviceregistry
+- MSR: https://github.com/maritimeconnectivity/mc-serviceregistry

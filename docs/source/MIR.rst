@@ -449,9 +449,9 @@ MIR reference implementation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 MCC governs the reference implementations on MIR as follows:
 
-* MCP-PKI library for handling certificates: https://github.com/MaritimeConnectivityPlatform/MCP-PKI
-* MIR API: https://github.com/MaritimeConnectivityPlatform/IdentityRegistry
-* MIR Identity Broker: https://github.com/MaritimeConnectivityPlatform/MCPKeycloakSpi
+* MCP-PKI library for handling certificates: https://github.com/maritimeconnectivity/MCP-PKI
+* MIR API: https://github.com/maritimeconnectivity/IdentityRegistry
+* MIR Identity Broker: https://github.com/maritimeconnectivity/MCPKeycloakSpi
 
 MIR Identity Broker which enables the token-based user authentication is based on `Keycloak <https://www.keycloak.org/>`__ which is an OpenID Connect (OIDC) server developed by Red Hat, but including two MCP specific plugins for synchronization of user data with MIR API and converting MCP client certificates to OIDC tokens.
 Giving a detailed account of the synchronization part when the API is called to create a new user with corresponding information it is registered in the API database and also the ID Broker accounts.
