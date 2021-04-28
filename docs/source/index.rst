@@ -14,7 +14,7 @@ To build solid understanding of MCP you are expected to read the documents from 
 
 * `MCP official webpage <https://maritimeconnectivity.net/>`__
 * `MCP concept document <https://maritimeconnectivity.net/docs/TheMCPconcept.pdf>`__
-* `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__
+* `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-overview.pdf>`__
 * `IALA's G1128 e-Navigation technical service specification guideline <https://maritimeconnectivity.net/docs/Service_Documentation_Guidelines.pdf>`__
 
 Please refer `our Google Group <https://groups.google.com/forum/#!forum/maritimeconnectivity>`__ for general usage questions and new releases.
