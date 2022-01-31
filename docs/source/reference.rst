@@ -8,11 +8,13 @@ Related documents
 * `G1128 technical service specification template <https://maritimeconnectivity.net/docs/Service_Specification_Template.docx>`__
 * `G1128 technical service design description template <https://maritimeconnectivity.net/docs/Service_Design_Description_Template.docx>`__
 * `G1128 technical service instance description template <https://maritimeconnectivity.net/docs/Service_Instance_Description_Template.docx>`__
-* `Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-overview.pdf>`__
-* `Identity Management and Security: Identity Management (the MCP usage of Maritime Resource Names, MRN) <https://maritimeconnectivity.net/docs/mcp-idsec-2-ID.pdf>`__
-* `Identity Management and Security: Public Key Infrastructure (PKI) <https://maritimeconnectivity.net/docs/mcp-idsec-3-PKI.pdf>`__
-* `Identity Management and Security: Authentication and Authorisation for Web Services <https://maritimeconnectivity.net/docs/mcp-idsec-4-AUTH.pdf>`__
-* `A high-level description of the Maritime Messaging Service (MMS) <https://maritimeconnectivity.net/docs/MMS_Specification_0.8.3.pdf>`__
+* `MCP Gen4 Requirements for MCP identity service providers <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCP%20Gen4%20Requirements%20for%20MCP%20identity%20service%20providers.pdf>`__
+* `MCP IDsec1 MCC Identity Management and Security; General Approach and Basic Requirements <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCP%20IDsec1%20MCC%20Identity%20Management%20and%20Security;%20General%20Approach%20and%20Basic%20Requirements.pdf>`__
+* `MCP IDsec2 MCC Identity Management and Security; Identity Management <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCP%20IDsec2%20MCC%20Identity%20Management%20and%20Security;%20Identity%20Management.pdf>`__
+* `MCP IDsec3 MCC Identity Management and Security; Public Key Infrastructure (PKI) <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCP%20IDsec3%20MCC%20Identity%20Management%20and%20Security;%20Public%20Key%20Infrastructure.pdf>`__
+* `MCP IDsec4 MCC Identity Management and Security; Authentication and Authorization for Web Services <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCP%20IDsec4%20MCC%20Identity%20Management%20and%20Security;%20Authentication%20and%20Authorization%20for%20Web%20Services.pdf>`__
+* `MCP Gen5 Vetting Procedure for MCP Instance Providers <https://maritimeconnectivity.github.io/maritimeconnectivity.net/docs/MCC%20vetting%20procedures.pdf>`__
+* `MCP Gen7 Procedure for endorsing MCP identity service providers <https://secureservercdn.net/160.153.137.14/qkh.3ac.myftpupload.com/wp-content/uploads/2021/12/MCP-Gen7-Procedure-for-endorsing-MCP-identity-service-providers.pdf>`__
 
 Related projects
 -----------------
