@@ -3,7 +3,7 @@
 Maritime Service Registry (MSR)
 ================================
 
-Maritime Service Registry (MSR for short) is for service discovery and documentation. It fulfills the role of a design-time registry which stores human- and machine-readable documentation about the design and use of services, and a runtime registry containing the current information on where to reach a running service. Both these major parts come with extensive search functionality.
+Maritime Service Registry (MSR for short) is for service discovery and documentation. It fulfils the role of a design-time registry which stores human- and machine-readable documentation about the design and use of services, and a runtime registry containing the current information on where to reach a running service. Both these major parts come with extensive search functionality.
 This ensures the ability for service consumers to find the service they want to consume, as well as application developers to retrieve the documentation needed for learning how to interact with a service.
 
 Basic concepts

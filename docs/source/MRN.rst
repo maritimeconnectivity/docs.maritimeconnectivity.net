@@ -1,8 +1,8 @@
 .. _mcp-mrn:
 
-MCP namespace
+MCP MRN namespace
 ================================
-MCP namespace is a subspace of the Maritime Resource Name (MRN) space, which is an official URN namespace.
+MCP MRN namespace is a subspace of the Maritime Resource Name (MRN) space, which is an official URN namespace.
 This page aims to provide the syntax of the MCP `MRN (Maritime Resource Name) <https://www.iana.org/assignments/urn-formal/mrn>`__ which is described in `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__.
 
 MCP MRN syntax
