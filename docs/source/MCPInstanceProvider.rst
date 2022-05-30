@@ -7,7 +7,7 @@ An MCP instance is a number of environments of running MCP software.
 The MCP software is a software that meets the requirements set forth by the Maritime Connectivity platform Consortium (MCC).
 MCP software comprises three main components; MIR (Maritime Identity Registry), MSR (Maritime Service Registry) or MMS (Maritime Messaging Service). The MIR itself has two subcomponents; the MIR PKI and the MIR OIDC broker.
 
-An MCP environment is either a
+An MCP environment is either a 
 
 * Running MIR PKI
 * Running MIR PKI and MIR OIDC
