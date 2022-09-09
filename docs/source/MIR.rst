@@ -10,7 +10,7 @@ Under the API MIR can authenticate an user, based on two methods:
 * :ref:`Open ID Connect (OIDC)<mcp-oidc>`.
 
 MIR API accepts either a certificate (PKI) or a token (OIDC) for user authentication.
-After the authentication and following authorization, the user can register and manage the entities through the `MIR API <https://api.maritimeconnectivity.net/v2/api-docs>`__, with :ref:`a proper right what we defined as a role <mir-authorization>`.
+After the authentication and following authorization, the user can register and manage the entities through the `MIR API <https://api.maritimeconnectivity.net/v3/api-docs>`__, with :ref:`a proper right what we defined as a role <mir-authorization>`.
 One important feature as the identity management is to issue or revoke a X509 client certificate for entities that are already registered in the API database.
 
 .. _mcp-type:
@@ -19,7 +19,7 @@ MCP entity types
 -----------------
 MCP entity types are described in `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__ and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
-The data model of each entity in MIR is given in the `Swagger file of MIR <https://api.maritimeconnectivity.net/v2/api-docs>`__.
+The data model of each entity in MIR is given in the `Swagger file of MIR <https://api.maritimeconnectivity.net/v3/api-docs>`__.
 
 
 .. _mcp-pki:
@@ -137,7 +137,7 @@ A crucial part of any PKI is to support revocation of certificates, so that cert
 1. Call the OCSP interface provided by the Identity Registry for each certificate.
 2. Periodically download a Certificate Revocation File from the Identity Registry and use it check certificates locally.
 
-The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently http://api.maritimeconnectivity.net/x509/api/certificates/crl and http://api.maritimeconnectivity.net/x509/api/certificates/ocsp.
+The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently http://api.maritimeconnectivity.net/x509/api/certificates/crl/urn:mrn:mcp:ca:mcc:mcp-idreg and http://api.maritimeconnectivity.net/x509/api/certificates/ocsp/urn:mrn:mcp:ca:mcc:mcp-idreg.
 
 .. _mcp-oidc:
 
@@ -441,7 +441,7 @@ What MCC governs in MIR
 * :ref:`MCP types and its hierarchy <mcp-type>`
 * :ref:`PKI certificate profile <mcp-pki-cert-profile>`
 * :ref:`OIDC Token <mcp-token>`
-* REST API (https://api.maritimeconnectivity.net/v2/api-docs)
+* REST API (https://api.maritimeconnectivity.net/v3/api-docs and https://api.maritimeconnectivity.net/swagger-ui/index.html)
 * MCP Instance Provider root CA list
 * MIR reference implementation
 
@@ -455,5 +455,5 @@ MCC governs the reference implementations on MIR as follows:
 
 MIR Identity Broker which enables the token-based user authentication is based on `Keycloak <https://www.keycloak.org/>`__ which is an OpenID Connect (OIDC) server developed by Red Hat, but including two MCP specific plugins for synchronization of user data with MIR API and converting MCP client certificates to OIDC tokens.
 Giving a detailed account of the synchronization part when the API is called to create a new user with corresponding information it is registered in the API database and also the ID Broker accounts.
-The synchronization is provoked when a user logs in using an external identity provider by registering the user’s information to the API database.
+The synchronization is provoked when a user logs in using an external identity provider by registering the user's information to the API database.
 In our testbed we use the federation to enable the participants across different projects to register and utilize MCP services established by the projects, as well as validate the identity management concept of MCP.
