@@ -139,11 +139,17 @@ A crucial part of any PKI is to support revocation of certificates, so that cert
 
 The endpoints for both the OCSP interface and the Certificate Revocation File are embedded into the certificates issued by MCP Identity Registry, and are currently http://api.maritimeconnectivity.net/x509/api/certificates/crl/urn:mrn:mcp:ca:mcc:mcp-idreg and http://api.maritimeconnectivity.net/x509/api/certificates/ocsp/urn:mrn:mcp:ca:mcc:mcp-idreg.
 
+MCC Testbed Truststore
+^^^^^^^^^^^^^^^^^^^^^^^
+In order to use the certificates issued by the MCC Testbed Identity Registry it is needed to add the MCC trustchain to the relevant trustchain. Here you can download the trustchain for the MCC Testbed environment:
+
+Trustchain as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-ca-chain.pem>`, in `JKS (for Java)<https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-truststore-password-is-changeit.jks>`, or `a zip with the separate files <https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-ca-certs.zip>`.
+
 .. _mcp-oidc:
 
 Open ID Connect (OIDC)
 ----------------------
-`OpenID Connect <https://openid.net/connect>`__ is the protocol chosen to be used for user federation in MCP, and it should be supported by Service Providers. It is an interoperable authentication protocol based on the `OAuth 2.0 <https://oauth.net/2/>`__ family of specifications. It uses straightforward REST/JSON message flows with a design goal of "making simple things simple and complicated things possible". It’s uniquely easy for developers to integrate, compared to any preceding Identity protocols.
+`OpenID Connect <https://openid.net/connect>`__ is the protocol chosen to be used for user federation in MCP, and it should be supported by Service Providers. It is an interoperable authentication protocol based on the `OAuth 2.0 <https://oauth.net/2/>`__ family of specifications. It uses straightforward REST/JSON message flows with a design goal of "making simple things simple and complicated things possible". It's uniquely easy for developers to integrate, compared to any preceding Identity protocols.
 
 OpenID Connect lets developers authenticate their users across websites and apps without having to own and manage password files. For the app builder, it provides a secure verifiable, answer to the question: "What is the identity of the person currently using the browser or native app that is connected to me?"
 
@@ -294,7 +300,7 @@ The flow looks like the diagram below:
 
 Example of Obtaining an OIDC Token using a Certificate
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In this simple example we will assume that a certificate and key—​pair has been issued to the entity who wishes to authenticate. This example makes use of curl a command line tool available on Linux and Mac OS X.
+In this simple example we will assume that a certificate and key-pair has been issued to the entity who wishes to authenticate. This example makes use of curl a command line tool available on Linux and Mac OS X.
 
 The authentication involves 2 steps:
 
