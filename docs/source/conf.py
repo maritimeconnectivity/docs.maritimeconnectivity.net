@@ -22,7 +22,7 @@ copyright = '2020, Maritime Connectivity Platform Consortium'
 author = 'Maritime Connectivity Platform Consortium'
 
 # The full version, including alpha/beta/rc tags
-release = '0.11.0'
+release = '1.3.0'
 
 
 # -- General configuration ---------------------------------------------------
