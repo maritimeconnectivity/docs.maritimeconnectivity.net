@@ -7,14 +7,14 @@ This page aims to provide the syntax of the MCP `MRN (Maritime Resource Name) <h
 
 MCP MRN syntax
 --------------
-The syntax of a MRN governed by the MCC (short: MCP MRN or MCP name) based on the Augmented Backus-Naur Form as specified in `[RFC5234] <https://tools.ietf.org/html/rfc5234>`__ is as follows:
+The syntax of a MRN governed by the MCC (short: MCP MRN or MCP name) based on the Augmented Backus-Naur Form as specified in `[RFC5234] <https://tools.ietf.org/html/rfc5234>`__ is as follows::
 
-  MCP-MRN = "urn" ":" "mrn" ":" "mcp" ":" MCP-TYPE ":" IPID ":" IPSS
-  MCP-TYPE = "entity" / "mir" / "mms" / "msr" / LEGACY
-  LEGACY = "device" / "org" / "user" / "vessel" / "service"
-  IPID = <CountryCode> / 3*22IPID-CHAR
+  MCP-MRN   = "urn" ":" "mrn" ":" "mcp" ":" MCP-TYPE ":" IPID ":" IPSS
+  MCP-TYPE  = "entity" / "mir" / "mms" / "msr" / LEGACY
+  LEGACY    = "device" / "org" / "user" / "vessel" / "service"
+  IPID      = <CountryCode> / 3*22IPID-CHAR
   IPID-CHAR = unreserved / pct-encoded
-  IPSS = pchar *(pchar / "/")
+  IPSS      = pchar *(pchar / "/")
 
 , where "mcp" specifies that the governing organization is the MCC and other attributes are defined:
 
