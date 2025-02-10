@@ -17,7 +17,7 @@ One important feature as the identity management is to issue or revoke a X509 cl
 
 MCP entity types
 -----------------
-MCP entity types are described in `MCC Identity Management and Security: General Approach and Basic Requirements <https://maritimeconnectivity.net/docs/mcp-idsec-1-v2.pdf>`__ and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
+MCP entity types are described in `IALA G1183: Provision of MCP identities <https://www.iala.int/product/g1183-provison-of-mcp-identities/>`__ and used in the :ref:`MCP namespace <mcp-mrn>` as *<MCP-TYPE>*.
 
 The data model of each entity in MIR is given in the `Swagger file of MIR <https://api.maritimeconnectivity.net/v3/api-docs>`__.
 
