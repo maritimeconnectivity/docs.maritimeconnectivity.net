@@ -75,7 +75,7 @@ The Subject distinguished name field will consists of the following items:
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
 |O (Organization)        |                            Organization MCP MRN                                    |
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
-|OU (Organizational Unit)|"user"    |"vessel"   |"device"   |"service"          |"mms"   |"organization"      |
+|OU (Organizational Unit)|"entity"    |"entity"   |"entity"   |"entity"          |"entity"   |"organization"      |
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
 |E (Email)               |User email|                                                    |Organization email  |
 +------------------------+----------+-----------+-----------+-------------------+--------+--------------------+
@@ -86,7 +86,7 @@ The Subject distinguished name field will consists of the following items:
 
 An example of the fields for a vessel could look like this::
 
-  C=DK, O=urn:mrn:mcp:org:idp1:dma, OU=vessel, CN=JENS SØRENSEN, UID=urn:mrn:mcp:vessel:idp1:dma:jens-soerensen
+  C=DK, O=urn:mrn:mcp:entity:idp1:dma, OU=vessel, CN=JENS SØRENSEN, UID=urn:mrn:mcp:entity:idp1:dma:jens-soerensen
 
 Finally, In additions to the information stored in the standard X.509 attributes listed above, the X509v3 extension SubjectAlternativeName (SAN) extension is used to store extra information. There already exists some predefined fields for the SAN extension, but they do not match the need we have for maritime related fields. Therefore the “otherName” field is used, which allows for using a Object Identifier (OID) to define custom fields. The OIDs currently used are not registered at ITU, but are randomly generated using a tool provided by ITU (see http://www.itu.int/en/ITU-T/asn1/Pages/UUID/uuids.aspx). See the table below for the fields defined, the OIDs of the fields and which kind of entities that uses the fields.
 
