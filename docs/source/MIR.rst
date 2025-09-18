@@ -143,7 +143,7 @@ MCC Testbed Truststore
 ^^^^^^^^^^^^^^^^^^^^^^^
 In order to use the certificates issued by the MCC Testbed Identity Registry it is needed to add the MCC trustchain to the relevant trustchain. Here you can download the trustchain for the MCC Testbed environment:
 
-Trustchain as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-truststore-password-is-changeit.jks>`__, or `a zip with the separate files <https://raw.githubusercontent.com/maritimeconnectivity/developers.maritimeconnectivity.net/gh-pages/identity/prod-certificate/mc-ca-certs.zip>`__.
+Trustchain as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/docs.maritimeconnectivity.net/refs/heads/files/mcp-ca-chain.pem>`__, in `JKS (for Java) <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-truststore-password-is-changeit.jks>`__, or `a zip with the separate files <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-ca-certs.zip>`__.
 
 .. _mcp-oidc:
 
