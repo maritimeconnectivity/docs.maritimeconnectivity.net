@@ -16,20 +16,17 @@ Using MCC MCP testbed
 MCC (or rather partners of the MCC on behalf of the MCC) through two of its members, KRISO and Frequentis, operates three environments of the MCP:
 
 * **test environment** which will be used for testing new versions of the MCP reference software as developed by the MCC (or rather partners of the MCC on behalf of the MCC).
-* **staging environment** which will be used for testing new release candidates of the MCP reference software.
 * **public demonstrator environment** for use by anyone for general tests/assessment of the MCP and services. This is mainly for promotional purposes.
 
-Only MCC members will be granted access to the test and staging environments, and these will only be used for the purposes designated for them.
+Access to the test environment can be given on a case-by-case basis.
 Public demonstrator environment will be, as the name indicates, made available to all (relevant) external stakeholders.
-
-The status of staging and public demonstrator environments is available in `here <https://status.maritimeconnectivity.net/>`__.
 
 Applying your organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Users of the MCC MCP testbed will go through a very simple validation process.
 
 1. New users apply for access through the management portal of the public demonstrator environment by filling out the `registration form <https://management.maritimeconnectivity.net/#/apply>`__.
-2. Their organizations will be assessed though their website (for test and staging: the organizations should be members of the MCC beforehand)
+2. Their organizations will be assessed though their website
 3. The users will be validated through email correspondence where they are requested to use an email address belonging to the official internet domain
 4. Access to the environments are handled by the MCC secretariat, which may deviate from the above procedure if they deem appropriate
 
@@ -37,7 +34,6 @@ Once your organization has been approved you will have access to services in the
 Any relevant organization is invited to join the testbed by applying through the management portal of following instances:
 
   * `public demonstrator environment <https://management.maritimeconnectivity.net/#/apply>`__
-  * `staging environment <https://staging-management.maritimeconnectivity.net/#/apply>`__
   * `test environment <https://test-management.maritimeconnectivity.net/#/apply>`__
 
 Please refer the manual of the management portal here: https://manual.maritimeconnectivity.net/
@@ -47,7 +43,6 @@ Using MCP testbed Certificates
 In order to use the certificates issued by the MCP Identity Registry it is needed to add MCP Root Certificates to the relevant trustchain. Here you can download the root certificates for MCP instances:
 
 The public demonstrator environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-certs.zip>`__.
-The staging environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/staging-certificate/mc-ca-certs.zip>`__.
 The test environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
 
 Adding your external Identity Provider to MCP testbed
