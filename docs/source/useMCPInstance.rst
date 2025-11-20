@@ -42,8 +42,9 @@ Using MCP testbed Certificates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In order to use the certificates issued by the MCP Identity Registry it is needed to add MCP Root Certificates to the relevant trustchain. Here you can download the root certificates for MCP instances:
 
-The public demonstrator environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/prod-certificate/mc-ca-certs.zip>`__.
-The test environment root certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
+The public demonstrator environment CA certificates as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/docs.maritimeconnectivity.net/refs/heads/files/mcp-ca-chain.pem>`__, in `JKS (for Java) <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-truststore-password-is-changeit.jks>`__, or `a zip with the separate files <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-ca-certs.zip>`__.
+
+The test environment CA certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
 
 Adding your external Identity Provider to MCP testbed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
