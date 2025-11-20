@@ -44,7 +44,7 @@ In order to use the certificates issued by the MCP Identity Registry it is neede
 
 The public demonstrator environment CA certificates as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/docs.maritimeconnectivity.net/refs/heads/files/mcp-ca-chain.pem>`__, in `JKS (for Java) <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-truststore-password-is-changeit.jks>`__, or `a zip with the separate files <https://github.com/maritimeconnectivity/docs.maritimeconnectivity.net/raw/refs/heads/files/mcp-ca-certs.zip>`__.
 
-The test environment CA certificates as `PEM (one file, primarily for Apache/Nginx) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-chain.pem>`__, in `JKS (for Java) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
+The test environment CA certificates as `PEM (one file, primarily for Apache/Nginx) <https://raw.githubusercontent.com/maritimeconnectivity/docs.maritimeconnectivity.net/refs/heads/files/test/mcp-ca-chain.pem>`__, in `JKS (for Java) <https://raw.githubusercontent.com/maritimeconnectivity/docs.maritimeconnectivity.net/refs/heads/files/test/mcp-truststore-password-is-changeit.jks>`__ or `a zip with the separate files (for windows) <http://developers.maritimeconnectivity.net/identity/test-certificate/mc-ca-certs.zip>`__.
 
 Adding your external Identity Provider to MCP testbed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
